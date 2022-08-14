@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e80202;
+    overflow: hidden;
+}
+.heart{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #ff0000;
+    transform: rotate(45deg);
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.2);
+}
+.heart::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    border-radius: 50%;
+    box-shadow: 0 -20px 20px rgba(0,0,0,0.1);
+}
+.heart::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    border-radius: 50%;
+    box-shadow: -20 0px 20px rgba(0,0,0,0.1);
+}
+
+.msgBox{   
+   /* position: absolute; */
+    width: 50vw;
+    height: 65vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 20px;
+    padding: 40px 20px;
+    
+    background-color: rgba(139, 245, 253, 0.406);
+    
+    z-index: 2;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    border: 2px solid rgba(252, 4, 4, 0.523);
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px 3px rgb(253, 161, 158);
+}
+.msgBox iframe{
+    /* display: none; */
+}
+
+.msg{
+    margin: 10px;
+    text-align: justify;
+    font-family: 'Satisfy', cursive;
+    color: #ffff99;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 60px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fdfd8a; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fdfd04; 
+  }
+
+.heartButton{
+    
+    width: 30px;
+    height: 30px;
+    background: #ff0000;
+    transform: rotate(45deg);
+    box-shadow: 20px 20px 40px rgba(0,0,0,0.2);
+    
+}
+.heartButton::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    border-radius: 50%;
+    box-shadow: 0 -20px 20px rgba(0,0,0,0.1);
+}
+.heartButton::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    border-radius: 50%;
+    box-shadow: -20 0px 20px rgba(0,0,0,0.1);
+}
+.heartButton span{
+    position: absolute;
+    z-index: 1;
+    left: -7px;
+    transform: rotate(-45deg);
+    
+    color: rgb(145, 255, 253);
+}
+.heartButton:hover {
+    box-shadow: 2px 2px 6px gray;
+    animation: grow 1s infinite;
+    cursor:pointer;
+}
+@keyframes grow{
+    0%{
+       width: 30px;
+       height: 30px; 
+       font-size: 16px;
+    }
+    30%{
+       width: 35px;
+       height: 35px;
+       font-size: 18px;
+    }
+    60%{
+        width: 40px;
+        height: 40px;
+        font-size: 20px;    
+    }
+    90%{
+        width: 35px;
+        height: 35px;  
+        font-size: 18px;  
+    }
+    100%{
+        width: 30px;
+        height: 30px;
+        font-size: 16px;        
+    }
+}
+
+
