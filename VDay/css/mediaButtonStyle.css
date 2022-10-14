@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
+    overflow: auto;
 }
 
 .box1{
@@ -20,7 +21,7 @@
     top: 3.8em;
     margin: 10px 0px;
     padding: 5px 10px;
-    background-color: rgba(13, 240, 47, 0.477);
+    /* background-color: rgba(13, 240, 47, 0.477); */
     display: flex;
     justify-content: center;
     align-items: center;
