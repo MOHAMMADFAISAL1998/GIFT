@@ -40,8 +40,8 @@
     <script>
         let viewportHeight = window.innerHeight;
         let viewportWidth = window.innerWidth;
-        document.getElementById("videoID").style.minWidth = viewportWidth;
-        document.getElementById("videoID").style.minHeight = viewportHeight;
+        document.getElementById("videoID").style.minWidth = viewportWidth + "px";
+        document.getElementById("videoID").style.minHeight = viewportHeight + "px";
         
         let view = viewportWidth + " X " + viewportHeight;
         document.getElementById("viewport").innerHTML= view;
