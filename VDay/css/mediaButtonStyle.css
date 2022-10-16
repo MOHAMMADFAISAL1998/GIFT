@@ -16,10 +16,10 @@
 }
 
 .box1{
-    width: 90vw;
+    width: 80vw;
     position: absolute;
     top: 0.5em;
-    margin: 10px 0px;
+    margin: 5px 0px;
     padding: 5px 10px;
     /* background-color: rgba(13, 240, 47, 0.477); */
     display: flex;
@@ -29,14 +29,14 @@
 }
 .nameGlow{
     font-family: 'Parisienne', cursive;
-    font-size: 1.1em;
+    font-size: 1.0em;
     /* font-weight: 500; */
     color: rgb(54, 54, 54);
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     cursor: pointer;
     /* text-transform: uppercase; */
     animation: glowAuto 10s infinite;
-    transition: 0.5s;
+    transition: 0.25s;
 
 }
 
@@ -94,17 +94,16 @@
 .memory span{
     display: block;
     position: absolute;
-    padding: 10px;
+    height: 50px;
+    width: 50px;
+    padding: 12px;
     cursor: pointer;
     opacity: 0.7;
     background-color: lightcyan;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    top: 4vh;
-    left: 4vw;
-    transform: translate(-50%,-50%); 
+    top: 5px;
+    left: 5px;
+    
 }
 .memory span:hover{
     background-color: cyan;
